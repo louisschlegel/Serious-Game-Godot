@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjhbrdmhm4o3y"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_a5ja2"]
+[ext_resource type="Texture2D" uid="uid://cpj3lf18nodq4" path="res://Character/PNJ/sandrine.png" id="2_h83r5"]
+
+[node name="Sandrine" instance=ExtResource("1_a5ja2")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_h83r5")
+
+[node name="AnimationTree" parent="." index="3"]
+parameters/Punch/blend_position = Vector2(0, -0.0106384)
+
+[editable path="InteractPlayerBox"]

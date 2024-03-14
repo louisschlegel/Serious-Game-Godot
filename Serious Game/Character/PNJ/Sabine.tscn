@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://gtc7nehjmv1p"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_wr18d"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_06by0"]
+[ext_resource type="Script" path="res://Character/PNJ/Sabine.gd" id="2_ynnkk"]
+[ext_resource type="Texture2D" uid="uid://bja78tosjkgtp" path="res://Asset/PNJ/Sabine.png" id="3_5g7yr"]
+
+[node name="Sabine" instance=ExtResource("1_wr18d")]
+script = ExtResource("2_ynnkk")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_5g7yr")
+
+[node name="InteractDialog" parent="." index="6" instance=ExtResource("2_06by0")]
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

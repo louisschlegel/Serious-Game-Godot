@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqv8mg573ig64"]
+
+[ext_resource type="PackedScene" uid="uid://duc7rrg3typ5b" path="res://Interaction/Interact.tscn" id="1_sys02"]
+[ext_resource type="Script" path="res://Interaction/InteractDialog.gd" id="2_iddu4"]
+[ext_resource type="PackedScene" uid="uid://biv4k0dwcl4g1" path="res://Interaction/ExclamationMark.tscn" id="3_h3qcu"]
+
+[node name="InteractDialog" instance=ExtResource("1_sys02")]
+script = ExtResource("2_iddu4")
+maxDialog = 0
+autoIncrement = true
+boolExcla = true
+
+[node name="exclamationMark" parent="." index="0" instance=ExtResource("3_h3qcu")]
+position = Vector2(0, -70)

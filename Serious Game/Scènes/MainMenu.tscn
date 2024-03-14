@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfdyuq7o2k2nx"]
+
+[ext_resource type="Script" path="res://Menu/MainMenu.gd" id="1_2k13b"]
+[ext_resource type="Texture2D" uid="uid://ck2fgn0owj034" path="res://Asset/ImagesMenu/Capture d’écran 2023-12-20 à 19.22.35.png" id="2_3bquy"]
+[ext_resource type="PackedScene" uid="uid://cba3rhso7w7qe" path="res://Interfaces/Pause.tscn" id="5_134tp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgwls"]
+texture = ExtResource("2_3bquy")
+
+[sub_resource type="LabelSettings" id="LabelSettings_4p0mx"]
+font_size = 130
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+script = ExtResource("1_2k13b")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(0.533333, 0.533333, 0.533333, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jgwls")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ClueTsu"
+label_settings = SubResource("LabelSettings_4p0mx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 2.08165e-12)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 2.08165e-12)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Paramètres
+"
+
+[node name="ExitButton" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 2.08165e-12)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Quitter
+"
+
+[node name="Pause" parent="." instance=ExtResource("5_134tp")]
+visible = false
+layout_mode = 1

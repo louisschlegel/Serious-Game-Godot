@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc64i1qcke7kc"]
+
+[ext_resource type="Script" path="res://Interaction/HurtBox.gd" id="1_0g15j"]
+
+[node name="HurtBox" type="Area2D"]
+collision_layer = 16
+collision_mask = 32
+script = ExtResource("1_0g15j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Revive" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="Die" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Revive" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Die" to="." method="_on_die_timeout"]

@@ -1,0 +1,28 @@
+{
+	"Scene0":
+		[
+			"Rencontrer les gens !",
+			"Aller chercher sa ceinture ! [E]",
+			"Va voir Lucas au tapis",
+			"Lucas a envie de se battre [P]",
+			"N'hésite pas à sortir ton téléphone [T]",
+			"Tu peux sortir le cours est fini"
+		],
+	"Scene1":
+		[
+			"Va donc voir la victime, elle est sur un brancard [E]",
+			"Parle au pompier",
+			"Parle au policier pour finir l'enquête",
+		],
+	"Scene2":
+		[
+			"Emprunte la porte au dessus : elle te mènera vers d'autres indices",
+			"Tu peux finir l'enquête en parlant au policier, mais il reste d'autres indices"
+		],
+	"Scene3":
+		[
+			"Tiens, un couteau : intéressant",
+			"Emprunte la porte : elle te mènera vers d'autres indices",
+			"Tu peux finir l'enquête en parlant au policier, mais il reste d'autres indices"
+		]
+}

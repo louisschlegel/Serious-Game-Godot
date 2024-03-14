@@ -1,0 +1,164 @@
+[gd_scene load_steps=11 format=3 uid="uid://bs4n2j7dytlxs"]
+
+[ext_resource type="Script" path="res://Paramètres/Settings.gd" id="1_insss"]
+[ext_resource type="PackedScene" uid="uid://b5on2smorbh2i" path="res://Paramètres/ButtonInput.tscn" id="2_3wvba"]
+[ext_resource type="Script" path="res://Paramètres/BindingKeys.gd" id="2_d4qy0"]
+[ext_resource type="Texture2D" uid="uid://ck2fgn0owj034" path="res://Asset/ImagesMenu/Capture d’écran 2023-12-20 à 19.22.35.png" id="2_l6atn"]
+[ext_resource type="FontFile" uid="uid://cqougaypxa5uy" path="res://Asset/Open_Sans/static/OpenSans-SemiBoldItalic.ttf" id="4_616g1"]
+[ext_resource type="FontFile" uid="uid://cbb4snx7gf8dh" path="res://Asset/Open_Sans/static/OpenSans-BoldItalic.ttf" id="5_dsplt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q4byj"]
+texture = ExtResource("2_l6atn")
+
+[sub_resource type="LabelSettings" id="LabelSettings_yqocv"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_ydy8q"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_hngxa"]
+font_size = 30
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_insss")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(0.533333, 0.533333, 0.533333, 1)
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_q4byj")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "RÉGLAGES"
+label_settings = SubResource("LabelSettings_yqocv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Affectation des touches"
+label_settings = SubResource("LabelSettings_yqocv")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 550)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 600)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="KeyList" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+script = ExtResource("2_d4qy0")
+
+[node name="Button" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button6" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button7" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button8" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button9" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button2" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button3" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button4" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button5" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/ScrollContainer/MarginContainer/KeyList" instance=ExtResource("2_3wvba")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Volume de la musique
+"
+label_settings = SubResource("LabelSettings_yqocv")
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_616g1")
+theme_override_font_sizes/font_size = 25
+text = "Volume
+"
+label_settings = SubResource("LabelSettings_ydy8q")
+
+[node name="VolumeSlideBar" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+value = 100.0
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/VolumeSlideBar"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_top = -64.0
+offset_bottom = -6.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_dsplt")
+theme_override_font_sizes/font_size = 25
+text = "100%"
+label_settings = SubResource("LabelSettings_hngxa")
+horizontal_alignment = 2
+
+[node name="ButtonValidation" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 50
+text = "VALIDER"

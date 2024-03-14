@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo20lxf4nlkwu"]
+
+[ext_resource type="PackedScene" uid="uid://bq5ghxjlc01f2" path="res://Waiter/Waiter.tscn" id="1_50x0b"]
+[ext_resource type="Script" path="res://Waiter/WaiterMovement.gd" id="2_vjwd4"]
+
+[node name="WaiterMovement" instance=ExtResource("1_50x0b")]
+script = ExtResource("2_vjwd4")
+movement = [Vector2(1, 0), 2]

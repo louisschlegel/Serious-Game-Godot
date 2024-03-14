@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3f6exr7snkdd"]
+
+[ext_resource type="Script" path="res://Phone/Phone.gd" id="1_oxyhr"]
+[ext_resource type="PackedScene" uid="uid://yqbfrq0lvb7m" path="res://Phone/VideoPlayer.tscn" id="2_jpc0q"]
+[ext_resource type="PackedScene" uid="uid://bpjrt40k111be" path="res://Phone/Message.tscn" id="3_3s3c3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y8nti"]
+bg_color = Color(0, 0, 0.862745, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vg5em"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Phone" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_top = 2884.0
+offset_right = 2160.0
+offset_bottom = 2884.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oxyhr")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.0
+offset_top = -344.0
+offset_right = 212.0
+offset_bottom = 344.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_y8nti")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Panel" type="Panel" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_vg5em")
+
+[node name="VideoPlayer" parent="PanelContainer/MarginContainer/Panel" instance=ExtResource("2_jpc0q")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 720.0
+offset_bottom = 1280.0
+scale = Vector2(0.53, 0.5)
+
+[node name="Message" parent="PanelContainer/MarginContainer/Panel" instance=ExtResource("3_3s3c3")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 2161.0
+offset_bottom = 3651.0
+grow_horizontal = 1
+grow_vertical = 1

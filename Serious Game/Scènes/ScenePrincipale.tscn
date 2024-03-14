@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://wfomct88p4ax"]
+
+[ext_resource type="Script" path="res://Scènes/ScenePrincipale.gd" id="1_rls16"]
+[ext_resource type="PackedScene" uid="uid://byin7p8hks717" path="res://Interfaces/Results.tscn" id="2_mk4gd"]
+[ext_resource type="PackedScene" uid="uid://b77023eilcejj" path="res://Scènes/EndGame.tscn" id="3_pcjcc"]
+
+[node name="ScenePrincipale2" type="Node2D"]
+script = ExtResource("1_rls16")
+
+[node name="ResultsJujitsu" parent="." instance=ExtResource("2_mk4gd")]
+visible = false
+
+[node name="ResultsCity" parent="." instance=ExtResource("2_mk4gd")]
+visible = false
+
+[node name="ResultsSchool" parent="." instance=ExtResource("2_mk4gd")]
+visible = false
+
+[node name="ResultsHouse" parent="." instance=ExtResource("2_mk4gd")]
+visible = false
+
+[node name="EndGame" parent="." instance=ExtResource("3_pcjcc")]
+visible = false
+
+[connection signal="nextScene" from="ResultsJujitsu" to="." method="_on_results_next_scene"]
+[connection signal="nextScene" from="ResultsCity" to="." method="_on_results_next_scene"]
+[connection signal="nextScene" from="ResultsSchool" to="." method="_on_results_next_scene"]
+[connection signal="nextScene" from="ResultsHouse" to="." method="_on_results_next_scene"]

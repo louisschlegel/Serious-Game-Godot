@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciem736xsjham"]
+
+[ext_resource type="Script" path="res://Inventaire/Items/Item.gd" id="1_xos83"]
+[ext_resource type="PackedScene" uid="uid://dcnu7y3dr0nmc" path="res://Interaction/InteractItem.tscn" id="2_204n1"]
+[ext_resource type="Texture2D" uid="uid://c328j748oqfo8" path="res://Asset/Items/belt.png" id="3_mol0k"]
+
+[node name="Item" type="Node2D"]
+script = ExtResource("1_xos83")
+
+[node name="InteractItem" parent="." instance=ExtResource("2_204n1")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_mol0k")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

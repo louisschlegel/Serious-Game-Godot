@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2t76eappdlr3"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_shvoc"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_jprcr"]
+[ext_resource type="Script" path="res://Character/PNJ/Ahmet.gd" id="2_qdwgv"]
+[ext_resource type="Texture2D" uid="uid://fbv2f8tn67a3" path="res://Asset/PNJ/Ahmet.png" id="3_vv1fs"]
+
+[node name="Ahmet" instance=ExtResource("1_shvoc")]
+script = ExtResource("2_qdwgv")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_vv1fs")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_jprcr")]
+rotation = -1.5708
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

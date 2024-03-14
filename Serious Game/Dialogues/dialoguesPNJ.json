@@ -1,0 +1,252 @@
+{
+	"Patrick": [
+		[
+			"Yo mec ça dit quoi la whaouuu mec trop coool whawwww!",
+			"Tu fais quoi aujourd'hui XD ?"
+		]
+	],
+	"Sandrine": [
+		[
+			"Bonjour, j'ai une quête pour vous",
+			"Va tuer des magiciens sombres",
+			"Tu auras le droit à une brique de lait"
+		]
+	],
+	"ProfJJB": [
+		[
+			"Prof : Va chercher ta ceinture le cours va commencer."
+		],
+		[
+			"Prof : Mets toi en face de Lucas et commence le combat.",
+			"Prof : Appuie sur [P] devant Lucas pour le taper."
+		],
+		[
+			"Prof : Va voir le groupe de trois personnes."
+		],
+		[
+			"Prof : Le cours est fini, tu peux t'en aller."
+		]
+	],
+	"Maitre": [
+		[
+			"Maître : Salut, comment vas-tu depuis tout ce temps, Lucas t’attend pour un petit combat, ne le ménage surtout pas!",
+			"Maître : Je te laisse chercher ta ceinture et te mettre en place."
+		]
+	],
+	"David": [
+		[
+			"David : Oh Damien !",
+			"David : Ça faisait longtemps que l’on ne t’avait pas vu!",
+			"David : Comment va le bougnoul ?"
+		]
+	],
+	"Lucas": [
+		[
+			"Lucas : Je vais te tabasser et tu ne pourras plus rien faire, Aladdin!",
+			"Moi : C’est ce que l'on va voir, tiens-toi prêt."
+		],
+		[
+			"Lucas : Ah ben c'est sûr que vous vous y connaissez bien en combat les afghans.",
+			"Moi : J’ai peut-être gagné car tu es plus faible qu’un phasme."
+		]
+	],
+	"Ami": [
+		[
+			"Amir : C’est moi ou tu frappes ta femme là ?!",
+			"Didier : Ah mais tous les jours, elle le mérite cette traînée.",
+			"Michelle : Haha, tu vas bien manger des pâtes",
+			"Moi : T'as aucune pitié envers ton mec!"
+		]
+	],
+	"Ancetre": [
+		[
+			"Moi : Salut l’ancêtre comment tu te portes ?",
+			"Le vieux : Je vais t’en coller une pas deux",
+			"Moi : Je rigole le vieux, allez bonne soirée."
+		]
+	],
+	"Policier1": [
+		[
+			"Policier : Ah, bonjour !",
+			"Policier : Nous vous avons appelé pour que vous compreniez ce qu'il s’est passé.",
+			"Policier : Vous devrez juger le niveau de légalité et de violence de cette agression.",
+			"Aujourd’hui vous ferez face à une agression physique entre deux hommes."
+		],
+		[
+			"Policier : Merci pour ton enquête"
+		]
+	],
+	"Kilian": [
+		[
+			"Kilian : Oh, Mr l’enquêteur, vous êtes enfin là !",
+			"Moi : Je vous écoute, qu’avez vous vu ?",
+			"Kilian : Aucune idée, ce ne sont pas mes affaires.",
+			"Kilian : Puis le gars avait l’air de l’avoir cherché.",
+			"Kilian : Laissez-moi tranquille maintenant."
+		]
+	],
+	"Sarah": [
+		[
+			"Sarah : Oh, Mr l’enquêteur, vous êtes enfin là !",
+			"Moi : Je vous écoute, qu’avez vous vu ?",
+			"Sarah : Ecoutez, je me baladais avec de la musique, ça reste très confus.",
+			"Sarah : La seule chose dont je me souviens c’est qu’un homme au visage fermé a poussé un homme.",
+			"Sarah : Après quelques mots et cris ils ont commencé à se battre.",
+			"Sarah : C’était tellement violent..."
+		]
+	],
+	"Louis": [
+		[
+			"Louis : Oh, Monsieur l’enquêteur, vous êtes enfin là !",
+			"Moi : Je vous écoute, qu’avez vous vu?",
+			"Louis : C’est allé tellement vite.. J’étais avec mon enfant et j’ai juste essayé de l’emmener loin du conflit.",
+			"Louis : Je n’ai retenu que quelques bribes, il a dit",
+			"Louis : “Comment va le bougnoul ?”",
+			"Louis : “Je vais te tabasser tellement fort que tu ne pourras plus rien faire Aladin!”.",
+			"Louis : Ce sont des phrases horribles..",
+			"Louis : En tous cas, j'espère que vous trouverez le responsable, j’ai peur pour mon enfant!"
+		]
+	],
+	"Ahmet": [
+		[
+			"Ahmet : Bonjour, ah c’est vous l’enquêteur.",
+			"Moi: Oui c’est bien moi, si vous en avez la force pourriez vous me raconter ce qui s’est passé ?",
+			"Ahmet : C’est tellement flou..",
+			"Ahmet : J’étais entrain de marcher et je sentais quelqu’un me fixer",
+			"Ahmet : Il était assis sur un banc devant moi."
+		],
+		[
+			"Moi : Serait-il possible que tu me décrives le combat s'il te plaît ?",
+			"Moi : Tiens, ça me rappelle un combat contre un ami au club!"
+		]
+	],
+	"Infirmiere": [
+		[
+			"Infirmiere : Je m’inquiète pour Ahmet, son état ne s’améliore pas,",
+			"Infirmiere : l’agresseur n’avait aucune limite.",
+			"Infirmiere : Il ne voulait qu’une chose.. c'était d'en finir avec lui.",
+			"Infirmiere : L’agresseur était un homme sans importance, mais d’une inouïe violence."
+		]
+	],
+	"Policier2": [
+		[
+			"Policier : Ah bonjour !",
+			"Policier : Nous vous avons appelés pour que vous compreniez ce qu'il s’est passé.",
+			"Policier : Vous devrez juger le niveau de légalité et de violence de cette agression",
+			"Policier : Aujourd’hui vous ferez face au suicide d’un enfant, le petit Gaston.",
+			"Policier : Essayez de savoir pourquoi il a décidé de faire ce choix s'il vous plaît.."
+		],
+		[
+			"Policier : Merci pour ton enquête"
+		]
+	],
+	"Sabine": [
+		[
+			"Sabine : Oh, Mr l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu ?",
+			"Sabine : Je n’ai rien vu du tout..",
+			"Sabine : J’ai passé ma vie à le protéger..",
+			"Sabine : En vain car au moment où il en avait le plus besoin, il n’a pas eu l’opportunité de m’en parler!",
+			"Sabine : Tout est de ma faute..",
+			"Sabine : Non je ne sais pas..",
+			"Moi : Madame, je peux vous assurer que ce n'est pas de votre faute,",
+			"Sabine : ça va être difficile mais essayez de ne pas culpabiliser le décès de votre fils."
+		]
+	],
+	"Tristan": [
+		[
+			"Tristan : Oh, Monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu?",
+			"Tristan : Vous voyez Gaston, ben je crois que je sais pourquoi il est parti.",
+			"Tristan : Je crois qu'il n’avait pas d’amis.."
+		]
+	],
+	"Marie": [
+		[
+			"Marie: Oh, monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute, qu’avez vous vu?",
+			"Marie: J’ai trop de peine pour Gaston.",
+			"Marie: Je lui parlais pas souvent mais il n’avait pas l’air méchant.",
+			"Marie: Tout le monde riait de lui,",
+			"Marie: mais je ne disais jamais rien..",
+			"Marie: Je me demande pourquoi il a fait ça,",
+			"Marie: est-ce que c’est de ma faute ?",
+			"Moi : Marie, ton ami n’est pas parti par ta faute."
+		]
+	],
+	"Bastien": [
+		[
+			"Moi : Je vous écoute qu’avez vous vu?",
+			"Bastien : J’aimais bien faire des blagues sur Gaston,",
+			"Bastien : Fanny rigolait à chaque fois, je crois qu’elle m’aime bien.",
+			"Bastien : Mais attendez !",
+			"Bastien : C’est à cause de mes blagues tout ça!",
+			"Bastien : C’était juste des blagues, rien que ça.",
+			"Moi : D'accord, merci de ton m'aide."
+		]
+	],
+	"Arnaud": [
+		[
+			"Arnaud : Oh, monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu? ",
+			"Arnaud : J’ai pas envie d’en parler.",
+			"Arnaud : Je l’aimais bien Gaston, il était toujours si gentil.",
+			"Arnaud : Je crois que j’étais son seul ami si j’y réfléchis bien.",
+			"Arnaud : Je voyais son sourire s’effacer mais je n’ai rien fait.",
+			"Arnaud : Mais pourquoi je n’ai rien fait ?",
+			"Arnaud : Est-ce que j’aurais dû en parler à des gens qu’il souriait moins? ",
+			"Arnaud : Il serait peut-être encore là..",
+			"Moi : Arnaud, ton copain n’est pas parti par ta faute"
+		]
+	],
+	"Policier3": [
+		[
+			"Policier : Ah bonjour !",
+			"Policier : Nous vous avons appelé pour que vous compreniez ce qu'il s’est passé.",
+			"Policier : Vous devrez juger le niveau de légalité et de violence de cette agression.",
+			"Policier : Aujourd’hui vous ferez face à une scène de violence conjugale qui a tourné à l’homicide involontaire."
+		],
+		[
+			"Policier : Merci pour ton enquête"
+		]
+	],
+	"Nathan": [
+		[
+			"Nathan : Oh, monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu ?",
+			"Nathan : Je ne comprends pas ce qu'il s’est passé",
+			"Nathan : Je connais Romane et James depuis presque 10 ans.",
+			"Nathan : Ils semblaient si heureux tous les deux.",
+			"Nathan : À chaque fête des voisins, j’étais jaloux de leur vie, de leur relation fusionnelle,",
+			"Nathan : j'étais tellement aveuglé par ma jalousie, que j’en ai perdu ma lucidité..",
+			"Nathan : Je n’ai pas vu qu’elle souffrait."
+		]
+	],
+	"Victoria": [
+		[
+			"Victoria : Oh, monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu? ",
+			"Victoria : Ben pas grand chose à vrai dire.",
+			"Victoria : Je ne réalise pas vraiment ce qu’il se passe, pour moi ce fut une énième scène de ménage.",
+			"Victoria : J’avais l’habitude de l’entendre hausser la voix, ça ne me choquait pas vraiment.",
+			"Victoria : Mais qu’il lève la main sur elle!",
+			"Victoria : C’est quelque chose qui me paraît invraisemblable.",
+			"Victoria : Pour moi ce n’était que des disputes sans lendemain, sans conséquences..."
+		]
+	],
+	"Sabrina": [
+		[
+			"Sabrina : Oh, monsieur l’enquêteur vous êtes enfin là !",
+			"Moi : Je vous écoute qu’avez vous vu ?",
+			"Sabrina : Je n’ai jamais senti ce mec,",
+			"Sabrina : je ne l’ai jamais vu violent mais je me rappelle d’un soir terrifiant.",
+			"Sabrina : C’était l’anniversaire d’un ami, il avait bu et j’ai surpris une conversation où il se vantait d’avoir déjà tapé Romane.",
+			"Sabrina : Si je reprends ces mots il avait dit “ah mais tous les jours, elle le mérite cette traînée !”."
+		]
+	],
+	"Pompier": [
+		[
+			"Pompier : Allez y doucement s’il vous plaît, il n’est pas encore totalement stable."
+		]
+	]
+}

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://b348a74h3ssv2"]
+
+[ext_resource type="Texture2D" uid="uid://867qbtt726j6" path="res://Interaction/key_E.png" id="1_sghsg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5uou"]
+atlas = ExtResource("1_sghsg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7wl3"]
+atlas = ExtResource("1_sghsg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bxfki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5uou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7wl3")
+}],
+"loop": true,
+"name": &"clique",
+"speed": 2.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Interagir" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_bxfki")
+animation = &"clique"
+autoplay = "clique"
+frame_progress = 0.413736

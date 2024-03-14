@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkrycie75g0on"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_no2ht"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_6ckwf"]
+[ext_resource type="Texture2D" uid="uid://bpo40a2lis08" path="res://Asset/PNJ/Kilian.png" id="2_dlx0p"]
+
+[node name="Kilian" instance=ExtResource("1_no2ht")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_dlx0p")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_6ckwf")]
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

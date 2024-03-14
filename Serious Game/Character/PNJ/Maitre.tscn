@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://by4qk54lpxtm5"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_jwtrq"]
+[ext_resource type="Texture2D" uid="uid://cnrn7rvfgmhr3" path="res://Asset/PNJ/Maitre.png" id="2_rbfni"]
+[ext_resource type="PackedScene" uid="uid://dqeq4ap2pv01l" path="res://Waiter/WaiterDialog.tscn" id="3_bs18x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygmsx"]
+size = Vector2(92, 16)
+
+[node name="Maitre" instance=ExtResource("1_jwtrq")]
+senseStartSprite = 2
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_rbfni")
+
+[node name="WaiterDialog" parent="." index="4" instance=ExtResource("3_bs18x")]
+
+[node name="CollisionShape2D" parent="WaiterDialog" index="0"]
+position = Vector2(-36, -2)
+shape = SubResource("RectangleShape2D_ygmsx")
+
+[editable path="WaiterDialog"]
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

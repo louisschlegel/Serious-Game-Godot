@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dop2u747ddg61"]
+
+[ext_resource type="PackedScene" uid="uid://di7ker866nkm" path="res://Character/Character.tscn" id="1_nwyqd"]
+[ext_resource type="Script" path="res://Character/Player/Player.gd" id="2_b6fme"]
+[ext_resource type="Texture2D" uid="uid://jmnd0ck5w3y0" path="res://Asset/player.png" id="3_3lwk6"]
+
+[node name="Player" instance=ExtResource("1_nwyqd")]
+collision_layer = 2
+script = ExtResource("2_b6fme")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_3lwk6")
+
+[node name="AnimationTree" parent="." index="3"]
+parameters/Punch/blend_position = Vector2(-0.0711974, 0.406114)
+
+[node name="InteractPlayerBox" parent="." index="5"]
+collision_mask = 72
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck1a23u0sqx22"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_w8wkt"]
+
+[node name="Ancetre" instance=ExtResource("1_w8wkt")]
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://yg0uyndae3do"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_6n31b"]
+[ext_resource type="PackedScene" uid="uid://bo20lxf4nlkwu" path="res://Waiter/WaiterMovement.tscn" id="2_lc5f8"]
+[ext_resource type="Texture2D" uid="uid://dhutwuy7uh8x1" path="res://Asset/PNJ/David.png" id="2_tn4cy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8svo"]
+size = Vector2(111, 21)
+
+[node name="David" instance=ExtResource("1_6n31b")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tn4cy")
+
+[node name="WaiterMovement" parent="." index="7" instance=ExtResource("2_lc5f8")]
+movement = [Vector2(-1, 0), 1]
+
+[node name="CollisionShape2D" parent="WaiterMovement" index="0"]
+position = Vector2(-150, -13)
+shape = SubResource("RectangleShape2D_v8svo")
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]
+[editable path="WaiterMovement"]

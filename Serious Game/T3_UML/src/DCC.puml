@@ -1,0 +1,87 @@
+@startuml
+
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+hide enum methods
+
+class Player extends Character
+{
+    + MAX_SPEED : Integer {readOnly}
+    + ACCELERATION : Integer {readOnly}
+    + FRICTION : Integer {readOnly}
+    + inDialog : Boolean
+    + inDialog : Boolean
+    + animationPlayer : var
+    + animationTree : var
+    + animationState : var
+    + set_in_dialog()
+    + unset_in_dialog()
+    + get_in_dialog() : Boolean
+}
+
+abstract class Interact
+{
+    + loadInteractAnim : var
+    + spriteEAnim : var
+    + canInteract : Boolean
+    + interact()
+    + delete_interact()
+}
+
+class InteractDialog extends Interact
+{
+    + interact()
+}
+
+abstract class Character
+{
+    + state : var
+    + die()
+    + punch_animation_finished()
+}
+
+enum Movement
+{
+    MOVE,
+    PUNCH,
+    DEATH
+}
+
+class Map_Chapter
+{
+    - ID_chapter : Integer
+}
+class DialogBox
+{
+    + jsonPath : String
+    + jsonData : var
+    + skip : bool
+    + WIDTH_MAX : Integer {readOnly}
+    + text : String
+    + timeLetter : Float
+    + timeSpace : Float
+    + timePunctuation : Float
+    + inDialogue : Boolean
+    + nextLine : Boolean
+    + Lines : Array
+    + line : String
+    + iLine : Integer
+    + nbLines : Integer
+    + i : Integer
+    + lenLine : Integer
+    + load_json_file() : Array
+    + load_dialogue(character : String) : Array
+    + print_line()
+    + print_letter()
+    + start_dialogue(character : String)
+}
+
+Interact *--> "1\n - player" Player :possède
+
+Character ..> Movement: <<use>>
+
+InteractDialog ..> DialogBox: <<use>>
+
+
+
+@enduml

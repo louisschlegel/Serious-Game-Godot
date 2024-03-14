@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=3 uid="uid://ctrgqoiwu4s80"]
+
+[ext_resource type="PackedScene" uid="uid://clvp34s4hrg3f" path="res://Interfaces/PopUpBox.tscn" id="4_1iv6v"]
+[ext_resource type="PackedScene" uid="uid://c5g3gl8fsdu4e" path="res://Interfaces/DialogueBox.tscn" id="4_saplh"]
+[ext_resource type="Script" path="res://Interfaces/Inventory.gd" id="5_nmntt"]
+[ext_resource type="Texture2D" uid="uid://c44ylkm402f0g" path="res://Asset/Interfaces/inventory_box.png" id="5_yoo0w"]
+[ext_resource type="AudioStream" uid="uid://dwf8pwy55wce7" path="res://Menu/menu.mp3" id="8_a5ufu"]
+[ext_resource type="Script" path="res://Menu/MenuMusic.gd" id="9_a0jgl"]
+
+[node name="MainUI" type="CanvasLayer"]
+
+[node name="PopUp" parent="." instance=ExtResource("4_1iv6v")]
+
+[node name="DialogueBox" parent="." instance=ExtResource("4_saplh")]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -750.0
+offset_top = -380.0
+offset_right = 750.0
+offset_bottom = -89.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Inventory" type="VBoxContainer" parent="."]
+layout_direction = 2
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -106.0
+offset_top = 32.0
+offset_right = -90.0
+offset_bottom = 128.0
+grow_horizontal = 0
+scale = Vector2(4, 4)
+alignment = 2
+script = ExtResource("5_nmntt")
+
+[node name="Inv_1" type="TextureRect" parent="Inventory"]
+layout_mode = 2
+texture = ExtResource("5_yoo0w")
+
+[node name="Box" type="TextureRect" parent="Inventory/Inv_1"]
+layout_mode = 0
+
+[node name="Inv_2" type="TextureRect" parent="Inventory"]
+layout_mode = 2
+texture = ExtResource("5_yoo0w")
+
+[node name="Box" type="TextureRect" parent="Inventory/Inv_2"]
+layout_mode = 0
+
+[node name="Inv_3" type="TextureRect" parent="Inventory"]
+layout_mode = 2
+texture = ExtResource("5_yoo0w")
+
+[node name="Box" type="TextureRect" parent="Inventory/Inv_3"]
+layout_mode = 0
+
+[node name="Inv_4" type="TextureRect" parent="Inventory"]
+layout_mode = 2
+texture = ExtResource("5_yoo0w")
+
+[node name="Box" type="TextureRect" parent="Inventory/Inv_4"]
+layout_mode = 0
+
+[node name="Inv_5" type="TextureRect" parent="Inventory"]
+layout_mode = 2
+texture = ExtResource("5_yoo0w")
+
+[node name="Box" type="TextureRect" parent="Inventory/Inv_5"]
+layout_mode = 0
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_a5ufu")
+script = ExtResource("9_a0jgl")

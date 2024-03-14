@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5g3gl8fsdu4e"]
+
+[ext_resource type="Texture2D" uid="uid://ba5cvd2kbyye8" path="res://Asset/Interfaces/DialogueBox.png" id="1_trw7f"]
+[ext_resource type="Script" path="res://Interfaces/DialogueBox.gd" id="2_wo3od"]
+[ext_resource type="FontFile" uid="uid://y0briuxltlvm" path="res://Asset/Open_Sans/static/OpenSans-Bold.ttf" id="3_ngw7y"]
+
+[node name="DialogueBox" type="NinePatchRect"]
+offset_left = 269.0
+offset_top = 753.0
+offset_right = 1769.0
+offset_bottom = 1044.0
+texture = ExtResource("1_trw7f")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+script = ExtResource("2_wo3od")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(700, 241)
+layout_mode = 2
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 1475.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ngw7y")
+theme_override_font_sizes/font_size = 60
+vertical_alignment = 1
+autowrap_mode = 2
+language = "fr_FR"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

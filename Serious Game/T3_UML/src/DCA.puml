@@ -1,0 +1,35 @@
+@startuml
+
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+hide enum methods
+
+class Player
+class Inventory
+class Item
+class Map_Chapter
+class Dialog
+class Interaction
+class PNJ
+class UI
+class Camera
+class Sound
+
+Player "1" -u- Map_Chapter : Se_joue_avec <
+Item "*"-u- Inventory : Contient <
+PNJ "*"-u- Map_Chapter : Comporte <
+Dialog "1..*" -u- UI : Diffuse <
+Player -l-  UI : Affecté >
+Dialog "1..*" -u- Player : Déclenche <
+Dialog "1..*" -u- PNJ : Déclenche <
+Camera "1"-u- Map_Chapter : Possède <
+Interaction "1..*"-u- Player : Possède <
+Interaction "1..*"-u- PNJ : Possède <
+Interaction "1..*"-u- Item : Possède <
+Sound "1..*"-u- Player : Émet <
+Sound "1..*"-u- PNJ : Émet <
+Sound "1..*"-u- Item : Émet <
+Inventory "1..*"-u- Player : Détient <
+
+
+@enduml

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk1u63nsfhr7n"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_t61j4"]
+[ext_resource type="Script" path="res://Character/PNJ/Sabrina.gd" id="2_bk0by"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_l5s7v"]
+[ext_resource type="Texture2D" uid="uid://bmeii8jn0vo77" path="res://Asset/PNJ/Sabrina.png" id="3_e46ce"]
+
+[node name="Sabrina" instance=ExtResource("1_t61j4")]
+z_index = 1
+scale = Vector2(0.62, 0.62)
+script = ExtResource("2_bk0by")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_e46ce")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_l5s7v")]
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

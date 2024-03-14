@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7wacffhj3jhb"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_kdynn"]
+[ext_resource type="Texture2D" uid="uid://dbqt55unnnc5" path="res://Asset/PNJ/Victoria.png" id="2_f4hcs"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_p0rfi"]
+
+[node name="Victoria" instance=ExtResource("1_kdynn")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_f4hcs")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_p0rfi")]
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

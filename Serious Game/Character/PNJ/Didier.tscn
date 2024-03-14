@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://clmq4nxehe87h"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_2hrq0"]
+[ext_resource type="Texture2D" uid="uid://c1rtvgpulbatc" path="res://Asset/PNJ/Didier.png" id="2_7p3qf"]
+[ext_resource type="PackedScene" uid="uid://dl0x05x43n2os" path="res://Interaction/pnjDetectPunch.tscn" id="2_eodf3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iigf3"]
+size = Vector2(35, 20)
+
+[node name="Didier" instance=ExtResource("1_2hrq0")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_7p3qf")
+
+[node name="AttackSpeed" type="Timer" parent="." index="7"]
+wait_time = 2.0
+
+[node name="pnjDetectPunch" parent="." index="8" instance=ExtResource("2_eodf3")]
+
+[node name="CollisionShape2D" parent="pnjDetectPunch" index="0"]
+position = Vector2(25.5, 14)
+shape = SubResource("RectangleShape2D_iigf3")
+disabled = true
+
+[connection signal="timeout" from="AttackSpeed" to="." method="_on_attack_speed_timeout"]
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]
+[editable path="pnjDetectPunch"]

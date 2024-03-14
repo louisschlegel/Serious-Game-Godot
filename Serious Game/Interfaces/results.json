@@ -1,0 +1,63 @@
+{
+	"Jujitsu": [
+		[
+			"Violence Physique",
+			"Violence Raciale",
+			"Violence Verbale"
+		],
+		[
+			"Combat avec Lucas + Combat du couple",
+			"Insultes + blagues sur l'éthnie du joueur",
+			"Propos tenus par le mari envers sa femme"
+		],
+		[
+			80,
+			30
+		],
+	],
+	"Node2D": [
+		[
+			"Violence Physique",
+			"Violence Raciale",
+		],
+		[
+			"Combat entre les deux personnages",
+			"Répliques tenues par l'agresseur"
+		],
+		[
+			15,
+			75
+		],
+	],
+	"School": [
+		[
+			"Violence Psychologique",
+			"Violence Verbale",
+		],
+		[
+			"Acharnement sur Gaston de la part de ses camarades",
+			"Critiques + insultes + blagues de mauvais goût fait à Gaston",
+		],
+		[
+			20,
+			90
+		],
+	],
+	"House": [
+		[
+			"Violence Physique",
+			"Violence Psychologique",
+			"Violence Verbale",
+		],
+		[
+			"Agression de l'homme sur sa femme à plusieurs reprises",
+			"Harcèlement du mari",
+			"Manière dont le mari parle à sa femme"
+		],
+		[
+			0,
+			100
+		],
+	],
+
+}

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://ul3j7hj43k56"]
+
+[ext_resource type="PackedScene" uid="uid://ciem736xsjham" path="res://Inventaire/Items/Item.tscn" id="1_0i5ri"]
+[ext_resource type="Script" path="res://Inventaire/Items/belt.gd" id="2_iyi4h"]
+
+[node name="belt" instance=ExtResource("1_0i5ri")]
+script = ExtResource("2_iyi4h")

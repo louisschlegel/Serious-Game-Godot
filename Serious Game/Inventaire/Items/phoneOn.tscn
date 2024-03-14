@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://drxk12h8t57f4"]
+
+[ext_resource type="PackedScene" uid="uid://ciem736xsjham" path="res://Inventaire/Item.tscn" id="1_duqy3"]
+[ext_resource type="Texture2D" uid="uid://dxcuqfu77ijoo" path="res://Asset/Items/phoneOn.png" id="2_ytkyb"]
+
+[node name="phoneOn" instance=ExtResource("1_duqy3")]
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ytkyb")

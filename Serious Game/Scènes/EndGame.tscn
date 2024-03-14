@@ -1,0 +1,106 @@
+[gd_scene load_steps=8 format=3 uid="uid://b77023eilcejj"]
+
+[ext_resource type="Script" path="res://Scènes/EndGame.gd" id="1_m5ljb"]
+[ext_resource type="LabelSettings" uid="uid://bm4vqujqflps7" path="res://Interfaces/sceneFin.tres" id="2_t7h53"]
+[ext_resource type="Texture2D" uid="uid://c2ke4qunwvw6b" path="res://Asset/Interfaces/Background.png" id="2_x4a8v"]
+[ext_resource type="FontFile" uid="uid://db0xxyso84mi" path="res://Asset/Open_Sans/static/OpenSans_SemiCondensed-Bold.ttf" id="3_j27b7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_81tcv"]
+texture = ExtResource("2_x4a8v")
+texture_margin_left = 500.0
+texture_margin_top = 200.0
+texture_margin_right = 500.0
+texture_margin_bottom = 500.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_y48yf"]
+font = ExtResource("3_j27b7")
+font_size = 200
+
+[sub_resource type="LabelSettings" id="LabelSettings_mxfpp"]
+font = ExtResource("3_j27b7")
+font_size = 80
+
+[node name="EndGame" type="Control"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m5ljb")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -434.5
+offset_top = -126.0
+offset_right = 434.5
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_81tcv")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 200
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "SCORE FINAL :"
+label_settings = ExtResource("2_t7h53")
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "test"
+label_settings = SubResource("LabelSettings_y48yf")
+
+[node name="Lose" type="Label" parent="PanelContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "VOUS AVEZ PERDU, SOYEZ MEILLEUR ! RECOMMENCER !"
+label_settings = SubResource("LabelSettings_mxfpp")
+
+[node name="Win" type="Label" parent="PanelContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 8
+text = "BIEN JOUÉ, VOUS ÊTES LE FUTUR HERCULE POIREAU"
+label_settings = SubResource("LabelSettings_mxfpp")
+
+[node name="ButtonMenu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -162.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "MENU"
+
+[node name="ButtonExit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -93.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "QUITTER
+"

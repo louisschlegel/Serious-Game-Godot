@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://clvp34s4hrg3f"]
+
+[ext_resource type="Texture2D" uid="uid://ba5cvd2kbyye8" path="res://Asset/Interfaces/DialogueBox.png" id="1_b854j"]
+[ext_resource type="FontFile" uid="uid://tcefbko6kxgx" path="res://Asset/Open_Sans/static/OpenSans-SemiBold.ttf" id="2_frd22"]
+[ext_resource type="Script" path="res://Interfaces/PopUpBox.gd" id="2_libb0"]
+
+[node name="PopUp" type="NinePatchRect"]
+modulate = Color(0, 1, 1, 1)
+offset_left = 69.0
+offset_top = 130.0
+offset_right = 469.0
+offset_bottom = 192.0
+texture = ExtResource("1_b854j")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+script = ExtResource("2_libb0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 377.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_frd22")
+theme_override_font_sizes/font_size = 20
+text = "Une ligne, qui fait la taille d'une ligne"
+autowrap_mode = 3

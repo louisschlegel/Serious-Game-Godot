@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc5eshvcth7hs"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_fc7fi"]
+[ext_resource type="Script" path="res://Character/PNJ/Lucas.gd" id="2_2xnj5"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_ipn7g"]
+[ext_resource type="PackedScene" uid="uid://dl0x05x43n2os" path="res://Interaction/pnjDetectPunch.tscn" id="2_jxc5x"]
+[ext_resource type="PackedScene" uid="uid://dc64i1qcke7kc" path="res://Interaction/hurtBox.tscn" id="2_sk75j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwd3o"]
+size = Vector2(20, 29)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r5vix"]
+radius = 17.0
+
+[node name="Lucas" instance=ExtResource("1_fc7fi")]
+script = ExtResource("2_2xnj5")
+senseStartSprite = 2
+
+[node name="pnjDetectPunch" parent="." index="4" instance=ExtResource("2_jxc5x")]
+
+[node name="CollisionShape2D" parent="pnjDetectPunch" index="0"]
+position = Vector2(-25, 16)
+shape = SubResource("RectangleShape2D_nwd3o")
+disabled = true
+
+[node name="HurtBox" parent="." index="5" instance=ExtResource("2_sk75j")]
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2(0, 10)
+shape = SubResource("CircleShape2D_r5vix")
+disabled = true
+
+[node name="PunchHitbox" parent="HitboxPivot" index="0"]
+collision_layer = 1
+collision_mask = 1
+
+[node name="InteractDialog" parent="." index="9" instance=ExtResource("2_ipn7g")]
+autoIncrement = false
+boolExcla = false
+
+[node name="CollisionShape2D" parent="InteractDialog" index="1"]
+disabled = true
+
+[node name="setLeftIdle" type="Timer" parent="." index="10"]
+
+[connection signal="timeout" from="setLeftIdle" to="." method="_on_set_left_idle_timeout"]
+
+[editable path="pnjDetectPunch"]
+[editable path="HurtBox"]
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]
+[editable path="InteractDialog"]

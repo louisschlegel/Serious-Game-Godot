@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ixelty74jn4y"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_v3cim"]
+[ext_resource type="Texture2D" uid="uid://b5bkaiirc7ev8" path="res://Asset/PNJ/Bastien.png" id="2_16b5t"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_to4p7"]
+
+[node name="Bastien" instance=ExtResource("1_v3cim")]
+senseStartSprite = 4
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_16b5t")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_to4p7")]
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

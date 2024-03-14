@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqeq4ap2pv01l"]
+
+[ext_resource type="PackedScene" uid="uid://bq5ghxjlc01f2" path="res://Waiter/Waiter.tscn" id="1_n54gf"]
+[ext_resource type="Script" path="res://Waiter/WaiterDialog.gd" id="2_vth6a"]
+
+[node name="WaiterDialog" instance=ExtResource("1_n54gf")]
+script = ExtResource("2_vth6a")

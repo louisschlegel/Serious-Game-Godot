@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddt1kps38yoew"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_ncrpg"]
+[ext_resource type="PackedScene" uid="uid://bo20lxf4nlkwu" path="res://Waiter/WaiterMovement.tscn" id="2_uwf1f"]
+[ext_resource type="Texture2D" uid="uid://c2xg7jjt0ruu" path="res://Asset/PNJ/Tristan.png" id="2_uxcyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iido1"]
+size = Vector2(20, 59)
+
+[node name="Tristan" instance=ExtResource("1_ncrpg")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_uxcyb")
+
+[node name="WaiterMovement" parent="." index="7" instance=ExtResource("2_uwf1f")]
+movement = [Vector2(0, -1), 0.3]
+
+[node name="CollisionShape2D" parent="WaiterMovement" index="0"]
+position = Vector2(0, -115)
+shape = SubResource("RectangleShape2D_iido1")
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]
+[editable path="WaiterMovement"]

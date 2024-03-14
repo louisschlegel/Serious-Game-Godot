@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5on2smorbh2i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ni5i3"]
+bg_color = Color(0, 0, 0, 0.392157)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1djf6"]
+bg_color = Color(1, 1, 1, 0.392157)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kt65e"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(2.08165e-12, 80)
+anchors_preset = -1
+anchor_left = -0.004
+anchor_right = 1.038
+anchor_bottom = 0.142
+offset_left = 0.68
+offset_right = -99.9602
+offset_bottom = -0.360005
+theme_override_styles/normal = SubResource("StyleBoxFlat_ni5i3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1djf6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1djf6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kt65e")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -29.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "avancer"
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LabelInput" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "Q
+"
+vertical_alignment = 1

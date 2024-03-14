@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl0x05x43n2os"]
+
+[ext_resource type="Script" path="res://Interaction/pnjDetectPunch.gd" id="1_grg4x"]
+
+[node name="pnjDetectPunch" type="Area2D"]
+collision_layer = 64
+collision_mask = 2
+script = ExtResource("1_grg4x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

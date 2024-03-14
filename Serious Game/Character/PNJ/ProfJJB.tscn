@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://coqu10poyylpp"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_lmmna"]
+[ext_resource type="Texture2D" uid="uid://c48pfpsuw5rmt" path="res://Asset/PNJ/ProfJJB.png" id="2_5pnol"]
+[ext_resource type="Script" path="res://Character/PNJ/ProfJJB.gd" id="2_tpmsp"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="3_uhcmj"]
+
+[node name="ProfJJB" instance=ExtResource("1_lmmna")]
+script = ExtResource("2_tpmsp")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_5pnol")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 24)
+
+[node name="AnimationTree" parent="." index="3"]
+parameters/Punch/blend_position = Vector2(0, -0.0106384)
+
+[node name="InteractDialog" parent="." index="4" instance=ExtResource("3_uhcmj")]
+maxDialog = 1
+autoIncrement = false
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

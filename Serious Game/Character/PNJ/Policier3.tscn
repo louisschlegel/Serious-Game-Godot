@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj6cjkt547ofc"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_1ow7k"]
+[ext_resource type="Texture2D" uid="uid://cu7u2r62tmg3m" path="res://Asset/PNJ/Policier.png" id="2_a7so4"]
+[ext_resource type="Script" path="res://Character/PNJ/Policier3.gd" id="2_osm7l"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_u8648"]
+
+[node name="Policier3" instance=ExtResource("1_1ow7k")]
+z_index = 1
+script = ExtResource("2_osm7l")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_a7so4")
+
+[node name="Timer" type="Timer" parent="." index="7"]
+wait_time = 5.0
+
+[node name="InteractDialog" parent="." index="8" instance=ExtResource("2_u8648")]
+maxDialog = 1
+autoIncrement = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]

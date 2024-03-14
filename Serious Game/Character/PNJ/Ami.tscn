@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dq3ctj6jw4w3i"]
+
+[ext_resource type="PackedScene" uid="uid://is8wp3f8klpg" path="res://Character/PNJ/PNJ.tscn" id="1_78p8w"]
+[ext_resource type="Script" path="res://Character/PNJ/Ami.gd" id="2_46cpy"]
+[ext_resource type="PackedScene" uid="uid://dqv8mg573ig64" path="res://Interaction/InteractDialog.tscn" id="2_cqj80"]
+[ext_resource type="Texture2D" uid="uid://cs2q3we6gdmgv" path="res://Asset/PNJ/Ami.png" id="3_0nfau"]
+
+[node name="Ami" instance=ExtResource("1_78p8w")]
+script = ExtResource("2_46cpy")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_0nfau")
+
+[node name="InteractDialog" parent="." index="7" instance=ExtResource("2_cqj80")]
+boolExcla = false
+
+[node name="CollisionShape2D" parent="InteractDialog" index="1"]
+disabled = true
+
+[editable path="HitboxPivot/PunchHitbox"]
+[editable path="InteractPlayerBox"]
+[editable path="InteractDialog"]

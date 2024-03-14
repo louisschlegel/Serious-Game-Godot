@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq5ghxjlc01f2"]
+
+[ext_resource type="Script" path="res://Waiter/Waiter.gd" id="1_a5sn7"]
+
+[node name="Waiter" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_a5sn7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

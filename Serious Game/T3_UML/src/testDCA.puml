@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+
+hide empty members
+hide Partie
+
+class Jeu15
+class Partie
+class Joueur
+{
+  pseudo
+}
+class "     De     " as De
+
+De "1" -u- Jeu15 : Se_joue_avec <
+Partie -l- Jeu15 : Permet de jouer >
+Jeu15 -- "*" Joueur : Joue <
+Joueur "1..*" -u- Partie : Participe >
+Joueur -l-  De : > Lance
+
+/'
+9.2.4 Notation
+9.2.4.1 Classifiers
+...
+For those languages that distinguish between uppercase and lowercase characters,
+Classifier names should begin with an uppercase character.
+'/
+@enduml

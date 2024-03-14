@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlkpgyuguo2dr"]
+
+[ext_resource type="PackedScene" uid="uid://ciem736xsjham" path="res://Inventaire/Items/Item.tscn" id="1_5a3k0"]
+[ext_resource type="Script" path="res://Inventaire/Items/Knife.gd" id="2_8145f"]
+[ext_resource type="Texture2D" uid="uid://d23yn53p3dumv" path="res://Asset/Items/knife.png" id="2_nek44"]
+
+[node name="Knife" instance=ExtResource("1_5a3k0")]
+script = ExtResource("2_8145f")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_nek44")
