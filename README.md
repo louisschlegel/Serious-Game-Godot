@@ -10,7 +10,7 @@ Ce jeu consiste à enquêter sur diverses affaires de violences dans des context
 
 ### Quelques images du jeu
 
-![Screenshot](Serious-Game-Godot/Serious Game/Asset/ReadmeScreenShots)
+![Screenshot](Serious-Game-Godot/Serious Game/Asset/ReadmeScreenShots/Capture_d_écran_2023-12-20_à_16.28.36.png)
 
 ### Documentation
 
